@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+/*
+* Utilizando esse * para limpar as formatações pré definidas que podem prejudicar
+* e/ou causar futuros problemas em relação a estilização
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*
+* Estilizando a tag "body"como toda, nesse caso colocando o background, fazendo um degradê
+*/
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #969696f3 16.62%, #80f3edfd 85.61%);
+}
+
+/*
+* Estilizando a classe pai, "cabecalho"
+* Utiliza-se o "." por não fazer parte das principais tags
+*/
+.cabecalho {
+    display: flex; /* Biblioteca utilizada para formatação: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+    flex-direction: row; /* Modo de organização: horizontal ou vertical, nesse caso na horizontal */
+    align-items: center; /* Modo de organização: centralizada */
+    justify-content: space-around; /* Modo de organização: modo de espaçamento entre as opções */
+    padding: 24px; /* Distância entre o elemento e suas bordas, nesse caso as quatro bordas */
+}
+
+/*
+* Deixando a logo do tamanho ideal
+*/
+.cabecalhoImagem {
+    height: 72px;
+}
+
+.cabecalhoMenu {
+    display: flex;
+    gap: 40px; /* Tamanho do espaçamento entre as opções */
+}
+
+/*
+* Estilizando todos os itens do cabeçalho
+*/
+.cabecalhoItem {
+    font-family: 'Sarala', sans-serif; /* Utilizando a fonte que importamos do Google Fonts */
+    color: #ffffff;
+    font-weight: 650; /* "Peso" da fonte, o quão em negrito ela vai ficar */
+    font-size: 19px; /* Tamanho da fonte */
+}
+
+.principal {
+    margin-bottom: 48px; /* Espaçamento ao final dessa tag */
+    border-top: 0.05px solid #FFF2E7; /* Divisória no começo dessa tag: linha sólida */
+}
+
+.principalConteudo {
+    display:  flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.principalConteudoEscrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.principalConteudoTitulo {
+    font-family: 'Righteous', cursive;
+    font-weight: 450;
+    font-size: 65px;
+    color: #ffffff
+}
+
+.principalConteudoSubtitulo {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFF2E7;
+}
+
+/*
+* Estilizando o botão "Me adicione!"
+*/
+.principalConteudoBotao {
+    background-color: #ECD6C4;
+    width: 180px; /* Largura */
+    height: 60px; /* Altura */
+    border: none; /* Tirando a borda cinza que já vem */
+    box-shadow: 8px 9px 8px rgba(0, 0, 0, 0.25); /* Sombra em volta do botão */
+    border-radius: 20px; /* Botão com formato arredondado */
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #2F2325; /* Cor do "Me adicione!" */
+}
+
+.principalConteudoBotao:hover{
+    background-color: rgba(236, 214, 196, 0.53); /* Cor do botão em si */
+}
+
+.principalConteudoImagem {
+    height: 600px;
+}
+
+.secundarioConteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.secundarioConteudoTitulo {
+    border-top: 0.4px solid #FFF2E7;
+    padding-top: 48px; /* Distância entre o elemento e sua borda superior */
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFF2E7;
+    margin-bottom: 16px; /* Espaçamento ao final da tag */
+}
+
+.secundarioConteudoParagrafo {
+    font-family: 'Salara', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #FFF2E7;
+}
+
+.rodape {
+    border-top: 0.4px solid #FFF2E7;
+    padding: 32px;
+}
+
+.rodapeImagem {
+    height: 70px;
+    display: block; /* Centralizando a imagem */
+    margin: 0 auto; /* Centralizando a imagem */
+}
